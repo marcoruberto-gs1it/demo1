@@ -72,70 +72,73 @@
     />
 
     <!-- JSON-LD UNIFICATO: GS1 Web Vocabulary + Schema.org -->
+    <!-- JSON-LD UNIFICATO E PULITO: GS1 Web Vocabulary -->
     <script type="application/ld+json">
-      {
-        "@context": {
-          "@vocab": "https://schema.org/",
-          "gs1": "https://ref.gs1.org/voc/"
+    {
+      "@context": {
+        "@vocab": "https://schema.org/",
+        "gs1": "https://ref.gs1.org/voc/"
+      },
+      "@id": "https://id.gs1.org/01/08032089000147",
+      "@type": "gs1:FoodBeverageTobaccoProduct",
+      "name": "Marmellata di Fragole Extra - GS1 Italy",
+      "gs1:functionalName": "Confettura light",
+      "description": "Preparata con il 70% di fragole attentamente selezionate. Un sapore autentico per la tua colazione o per le tue creazioni in cucina, garantito dagli standard di qualità della filiera tracciata. Senza glutine.",
+      "image": [
+        "https://demo.gs1it.org/gtin/08032089000147/front.png"
+      ],
+      "sku": "08032089000147",
+      "gtin": "08032089000147",
+      "gs1:gtin": "08032089000147",
+      "gs1:gpcCategoryCode": "10000217",
+      "brand": {
+        "@type": "Brand",
+        "name": "GS1 Italy"
+      },
+      "gs1:brandOwner": {
+        "@type": "Organization",
+        "name": "GS1 Italy",
+        "gs1:gln": "8032089000000",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Via Pietro Paleocapa 7",
+          "postalCode": "20121",
+          "addressLocality": "Milano",
+          "addressRegion": "MI",
+          "addressCountry": "IT"
         },
-        "@id": "https://id.gs1.org/01/08032089000147/10/LOTTO123",
-        "@type": "gs1:FoodBeverageTobaccoProduct",
-        "name": "Marmellata di Fragole Extra - GS1 Italy",
-        "gs1:functionalName": "Confettura light",
-        "description": "Preparata con il 70% di fragole attentamente selezionate. Un sapore autentico per la tua colazione o per le tue creazioni in cucina, garantito dagli standard di qualità della filiera tracciata. Senza glutine.",
-        "image": ["https://demo.gs1it.org/gtin/08032089000147/front.png"],
-        "sku": "08032089000147",
-        "gtin": "08032089000147",
-        "gs1:gtin": "08032089000147",
-        "gs1:gpcCategoryCode": "10000217",
-        "brand": {
-          "@type": "Brand",
-          "name": "GS1 Italy"
-        },
-        "gs1:brandOwner": {
+        "url": "http://gs1it.org"
+      },
+      "gs1:netWeight": {
+        "@type": "gs1:QuantitativeValue",
+        "value": "235",
+        "gs1:unitCode": "GRM"
+      },
+      "gs1:grossWeight": {
+        "@type": "gs1:QuantitativeValue",
+        "value": "388",
+        "gs1:unitCode": "GRM"
+      },
+      "gs1:ingredientStatement": "Fragole, acqua, zucchero, gelificante: pectina da frutta.",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://marcoruberto-gs1it.github.io/demo1/01/08032089000147",
+        "priceCurrency": "EUR",
+        "price": "4.99",
+        "priceValidUntil": "2026-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "seller": {
           "@type": "Organization",
-          "name": "GS1 Italy",
-          "gs1:gln": "8032089000000",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Via Pietro Paleocapa 7",
-            "postalCode": "20121",
-            "addressLocality": "Milano",
-            "addressRegion": "MI",
-            "addressCountry": "IT"
-          },
-          "url": "http://gs1it.org"
-        },
-        "gs1:netWeight": {
-          "@type": "gs1:QuantitativeValue",
-          "value": "235",
-          "gs1:unitCode": "GRM"
-        },
-        "gs1:grossWeight": {
-          "@type": "gs1:QuantitativeValue",
-          "value": "388",
-          "gs1:unitCode": "GRM"
-        },
-        "gs1:ingredientStatement": "Fragole, acqua, zucchero, gelificante: pectina da frutta.",
-        "offers": {
-          "@type": "Offer",
-          "url": "https://tuosito.com/prodotti/marmellata-fragole-08032089000147",
-          "priceCurrency": "EUR",
-          "price": "4.99",
-          "priceValidUntil": "2026-12-31",
-          "itemCondition": "https://schema.org/NewCondition",
-          "availability": "https://schema.org/InStock",
-          "seller": {
-            "@type": "Organization",
-            "name": "GS1 Italy Store"
-          }
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "reviewCount": "124"
+          "name": "GS1 Italy Store"
         }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "124"
       }
+    }
     </script>
 
     <style>
