@@ -74,8 +74,7 @@
       rel="stylesheet"
     />
 
-    <!-- JSON-LD UNIFICATO: GS1 Web Vocabulary + Schema.org -->
-    <!-- JSON-LD UNIFICATO E PULITO: GS1 Web Vocabulary -->
+    <!-- JSON-LD UNIFICATO E PULITO: GS1 Web Vocabulary + Schema.org -->
     <script type="application/ld+json">
     {
       "@context": {
@@ -83,7 +82,7 @@
         "gs1": "https://ref.gs1.org/voc/"
       },
       "@id": "https://id.gs1.org/01/08032089000147",
-      "@type": "gs1:FoodBeverageTobaccoProduct",
+      "@type": ["Product", "gs1:FoodBeverageTobaccoProduct"],
       "name": "Marmellata di Fragole Extra - GS1 Italy",
       "gs1:functionalName": "Confettura light",
       "description": "Preparata con il 70% di fragole attentamente selezionate. Un sapore autentico per la tua colazione o per le tue creazioni in cucina, garantito dagli standard di qualità della filiera tracciata. Senza glutine.",
@@ -114,7 +113,7 @@
       },
       "gs1:netWeight": {
         "@type": "gs1:QuantitativeValue",
-        "value": "235",
+        "value": "250",
         "gs1:unitCode": "GRM"
       },
       "gs1:grossWeight": {
@@ -123,6 +122,11 @@
         "gs1:unitCode": "GRM"
       },
       "gs1:ingredientStatement": "Fragole, acqua, zucchero, gelificante: pectina da frutta.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "124"
+      },
       "offers": {
         "@type": "Offer",
         "url": "https://marcoruberto-gs1it.github.io/demo1/01/08032089000147",
@@ -388,14 +392,9 @@
       />
     </header>
 
-    <main
-      class="product-layout"
-      itemscope
-      itemtype="https://schema.org/Product"
-    >
+    <main class="product-layout">
       <div class="image-col">
         <img
-          itemprop="image"
           src="https://demo.gs1it.org/gtin/08032089000147/front.png"
           alt="Marmellata di Fragole Extra in vasetto da 250g - GS1 Italy"
         />
@@ -403,7 +402,7 @@
 
       <div class="info-col">
         <div class="category">Alimentari / Confetture</div>
-        <h1 class="title" itemprop="name">Marmellata di Fragole</h1>
+        <h1 class="title">Marmellata di Fragole</h1>
         <p class="subtitle">Confettura extra a ridotto contenuto di zuccheri</p>
 
         <div class="reviews">
@@ -411,15 +410,8 @@
           <span>4.8 (124 Recensioni)</span>
         </div>
 
-        <div
-          class="price"
-          itemprop="offers"
-          itemscope
-          itemtype="https://schema.org/Offer"
-        >
-          <meta itemprop="priceCurrency" content="EUR" />
-          <span itemprop="price" content="4.99">€ 4,99</span>
-          <link itemprop="availability" href="https://schema.org/InStock" />
+        <div class="price">
+          <span>€ 4,99</span>
         </div>
 
         <div class="format-label">Formato: 250g</div>
@@ -429,7 +421,7 @@
           <button class="btn btn-favorite">Preferiti</button>
         </div>
 
-        <p class="description" itemprop="description">
+        <p class="description">
           Preparata con il 70% di fragole attentamente selezionate. Un sapore
           autentico per la tua colazione o per le tue creazioni in cucina,
           garantito dagli standard di qualità della filiera tracciata.
@@ -437,20 +429,12 @@
 
         <ul class="details-list">
           <li>
-            <!-- Aggiornato a gtin generico per accogliere correttamente le 14 cifre -->
             <span class="details-label">GTIN</span>
-            <span class="details-value" itemprop="gtin">08032089000147</span>
+            <span class="details-value">08032089000147</span>
           </li>
           <li>
             <span class="details-label">Brand</span>
-            <span
-              class="details-value"
-              itemprop="brand"
-              itemscope
-              itemtype="https://schema.org/Brand"
-            >
-              <span itemprop="name">GS1 Italy</span>
-            </span>
+            <span class="details-value">GS1 Italy</span>
           </li>
           <li>
             <span class="details-label">Sito Web</span>
