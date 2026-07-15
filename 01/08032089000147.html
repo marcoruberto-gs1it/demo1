@@ -77,70 +77,156 @@
     <!-- JSON-LD UNIFICATO E PULITO: GS1 Web Vocabulary + Schema.org -->
     <script type="application/ld+json">
     {
-      "@context": {
-        "@vocab": "https://schema.org/",
-        "gs1": "https://ref.gs1.org/voc/"
-      },
-      "@id": "https://id.gs1.org/01/08032089000147",
-      "@type": ["Product", "gs1:FoodBeverageTobaccoProduct"],
-      "name": "Marmellata di Fragole Extra - GS1 Italy",
-      "gs1:functionalName": "Confettura light",
-      "description": "Preparata con il 70% di fragole attentamente selezionate. Un sapore autentico per la tua colazione o per le tue creazioni in cucina, garantito dagli standard di qualità della filiera tracciata. Senza glutine.",
-      "image": [
-        "https://demo.gs1it.org/gtin/08032089000147/front.png"
-      ],
-      "sku": "08032089000147",
-      "gtin": "08032089000147",
-      "gs1:gtin": "08032089000147",
-      "gs1:gpcCategoryCode": "10000217",
-      "brand": {
-        "@type": "Brand",
-        "name": "GS1 Italy"
-      },
-      "gs1:brandOwner": {
-        "@type": "Organization",
-        "name": "GS1 Italy",
-        "gs1:gln": "8032089000000",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Via Pietro Paleocapa 7",
-          "postalCode": "20121",
-          "addressLocality": "Milano",
-          "addressRegion": "MI",
-          "addressCountry": "IT"
-        },
-        "url": "http://gs1it.org"
-      },
-      "gs1:netWeight": {
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "gs1": "https://ref.gs1.org/voc/"
+  },
+  "@id": "https://id.gs1.org/01/08032089000147",
+  "@type": "gs1:FoodBeverageTobaccoProduct",
+  "name": "Marmellata di Fragole Extra - GS1 Italy",
+  "gs1:functionalName": "Confettura light",
+  "description": "Preparata con il 70% di fragole attentamente selezionate. Un sapore autentico per la tua colazione o per le tue creazioni in cucina, garantito dagli standard di qualità della filiera tracciata. Senza glutine.",
+  "image": [
+    "https://demo.gs1it.org/gtin/08032089000147/front.png"
+  ],
+  "sku": "08032089000147",
+  "gtin": "08032089000147",
+  "gs1:gtin": "08032089000147",
+  "gs1:gpcCategoryCode": "10000217",
+  "brand": {
+    "@type": "Brand",
+    "name": "GS1 Italy"
+  },
+  "gs1:brandOwner": {
+    "@type": "Organization",
+    "name": "GS1 Italy",
+    "gs1:gln": "8032089000000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Pietro Paleocapa 7",
+      "postalCode": "20121",
+      "addressLocality": "Milano",
+      "addressRegion": "MI",
+      "addressCountry": "IT"
+    },
+    "url": "http://gs1it.org"
+  },
+  "gs1:netWeight": {
+    "@type": "gs1:QuantitativeValue",
+    "value": "250",
+    "gs1:unitCode": "GRM"
+  },
+  "gs1:grossWeight": {
+    "@type": "gs1:QuantitativeValue",
+    "value": "388",
+    "gs1:unitCode": "GRM"
+  },
+  "gs1:inPackageHeight": {
+    "@type": "gs1:QuantitativeValue",
+    "value": "127",
+    "gs1:unitCode": "MMT"
+  },
+  "gs1:inPackageWidth": {
+    "@type": "gs1:QuantitativeValue",
+    "value": "58",
+    "gs1:unitCode": "MMT"
+  },
+  "gs1:inPackageDepth": {
+    "@type": "gs1:QuantitativeValue",
+    "value": "58",
+    "gs1:unitCode": "MMT"
+  },
+  "gs1:ingredientStatement": "Fragole, acqua, zucchero, gelificante: pectina da frutta.",
+  "gs1:ingredient": [
+    {
+      "@type": "gs1:FoodBeverageTobaccoIngredientDetails",
+      "gs1:ingredientName": "Fragole",
+      "gs1:ingredientContentPercentage": {
         "@type": "gs1:QuantitativeValue",
-        "value": "250",
-        "gs1:unitCode": "GRM"
-      },
-      "gs1:grossWeight": {
-        "@type": "gs1:QuantitativeValue",
-        "value": "388",
-        "gs1:unitCode": "GRM"
-      },
-      "gs1:ingredientStatement": "Fragole, acqua, zucchero, gelificante: pectina da frutta.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "124"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://marcoruberto-gs1it.github.io/demo1/01/08032089000147",
-        "priceCurrency": "EUR",
-        "price": "4.99",
-        "priceValidUntil": "2026-12-31",
-        "itemCondition": "https://schema.org/NewCondition",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "GS1 Italy Store"
-        }
+        "value": "70.0",
+        "gs1:unitCode": "P1"
       }
+    },
+    {
+      "@type": "gs1:FoodBeverageTobaccoIngredientDetails",
+      "gs1:ingredientName": "Acqua"
+    },
+    {
+      "@type": "gs1:FoodBeverageTobaccoIngredientDetails",
+      "gs1:ingredientName": "Zucchero"
+    },
+    {
+      "@type": "gs1:FoodBeverageTobaccoIngredientDetails",
+      "gs1:ingredientName": "Gelificante: pectina da frutta"
     }
+  ],
+  "gs1:consumerStorageInstructions": "Dopo l'apertura conservare in frigorifero e consumare entro 7 giorni.",
+  "gs1:nutrientBasisQuantity": {
+    "@type": "gs1:QuantitativeValue",
+    "value": "100",
+    "gs1:unitCode": "GRM"
+  },
+  "gs1:energyPerNutrientBasis": [
+    {
+      "@type": "gs1:NutritionMeasurementType",
+      "value": "91",
+      "gs1:unitCode": "E14"
+    },
+    {
+      "@type": "gs1:NutritionMeasurementType",
+      "value": "383",
+      "gs1:unitCode": "KJO"
+    }
+  ],
+  "gs1:fatPerNutrientBasis": {
+    "@type": "gs1:NutritionMeasurementType",
+    "value": "0",
+    "gs1:unitCode": "GRM"
+  },
+  "gs1:saturatedFatPerNutrientBasis": {
+    "@type": "gs1:NutritionMeasurementType",
+    "value": "0",
+    "gs1:unitCode": "GRM"
+  },
+  "gs1:carbohydratesPerNutrientBasis": {
+    "@type": "gs1:NutritionMeasurementType",
+    "value": "22",
+    "gs1:unitCode": "GRM"
+  },
+  "gs1:sugarsPerNutrientBasis": {
+    "@type": "gs1:NutritionMeasurementType",
+    "value": "20",
+    "gs1:unitCode": "GRM"
+  },
+  "gs1:proteinPerNutrientBasis": {
+    "@type": "gs1:NutritionMeasurementType",
+    "value": "0",
+    "gs1:unitCode": "GRM"
+  },
+  "gs1:saltPerNutrientBasis": {
+    "@type": "gs1:NutritionMeasurementType",
+    "value": "0",
+    "gs1:unitCode": "GRM"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "124"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://marcoruberto-gs1it.github.io/demo1/01/08032089000147",
+    "priceCurrency": "EUR",
+    "price": "4.99",
+    "priceValidUntil": "2026-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "GS1 Italy Store"
+    }
+  }
+}
     </script>
     <style>
       :root {
